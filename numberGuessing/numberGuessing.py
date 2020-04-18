@@ -1,3 +1,5 @@
+# Gusessing game using random generated number
+
 import random
 
 numberToGuess = random.randint(1, 100)
