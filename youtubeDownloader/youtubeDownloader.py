@@ -1,14 +1,14 @@
 # Download videos from youtube based on a link provided
-# Selectic a version from a list available
+# Select a version from a list available
 # Requires pytube3 library
 
-from pytube import YouTube
+import pytube
 import os
 
 video_url = input("Insert the full youtube link: ")
 
 # youtube video object
-yt_video = YouTube(video_url)
+yt_video = pytube.YouTube(video_url)
 
 # streams available as a list
 streams = yt_video.streams.filter(mime_type="video/mp4")
@@ -18,7 +18,7 @@ for stream in streams:
     print(stream)
     count += 1
 while True:
-    selection = input("Whitch version do you want to download? (Default: 1): ")
+    selection = input("Which version do you want to download? (Default: 1): ")
     if not selection.strip():
         selection = 1
         break

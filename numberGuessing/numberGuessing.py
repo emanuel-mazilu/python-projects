@@ -1,4 +1,4 @@
-# Gusessing game using random generated number
+# Guessing game using random generated number
 
 import random
 
