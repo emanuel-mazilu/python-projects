@@ -11,3 +11,4 @@ https://data-flair.training/blogs/python-project-ideas/
  Navigate to the project directory and activate the pipenv
 
  ```pipenv install```
+ ```pipenv shell```
